@@ -1,6 +1,13 @@
 -- By default this file is used by `persistFileWith` in Model.hs (which is imported by Foundation.hs)
 -- Syntax for this file here: https://github.com/yesodweb/persistent/blob/master/docs/Persistent-entity-syntax.md
 
+Player
+    first Text
+    last Text
+    tryoutNumber Int
+    birthdate UTCTime
+    grade Int
+    teamGender TeamGender
 User
     ident Text
     password Text Maybe

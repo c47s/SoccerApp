@@ -10,15 +10,11 @@
 {-# LANGUAGE DerivingStrategies #-}
 {-# LANGUAGE StandaloneDeriving #-}
 {-# LANGUAGE UndecidableInstances #-}
-module Model where
+module Field where
 
 import ClassyPrelude.Yesod
 import Database.Persist.Quasi
-import Field -- Fields made with derivePersistField must be in a separate file
 
--- You can define all of your database entities in the entities file.
--- You can find more information on persistent and how to declare entities
--- at:
--- http://www.yesodweb.com/book/persistent/
-share [mkPersist sqlSettings, mkMigrate "migrateAll"]
-    $(persistFileWith lowerCaseSettings "config/models.persistentmodels")
+data TeamGender = Male | Female
+    deriving (Show, Read, Eq, Ord, Enum, Bounded)
+derivePersistField "TeamGender"
