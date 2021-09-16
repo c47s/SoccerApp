@@ -16,5 +16,5 @@ import ClassyPrelude.Yesod
 import Database.Persist.Quasi
 
 data TeamGender = Male | Female
-    deriving (Show, Read, Eq, Ord, Enum, Bounded)
+    deriving (Show, Read, Eq)
 derivePersistField "TeamGender"
