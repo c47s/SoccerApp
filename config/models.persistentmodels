@@ -4,10 +4,26 @@
 Player
     first Text
     last Text
-    tryoutNumber Int
     birthdate UTCTime
     grade Int
     teamGender TeamGender
+    tryoutNumber Int
+    tryoutNumExpiration UTCTime
+Evaluator -- TODO: Implement auth
+    first Text
+    last Text
+Evaluation
+    playerId PlayerId
+    evaluatorId EvaluatorId
+    skill SkillId
+    score Int
+    comments Text Maybe
+    date UTCTime
+Skill
+    name Text
+
+
+-- Demo stuff from scaffold
 User
     ident Text
     password Text Maybe
