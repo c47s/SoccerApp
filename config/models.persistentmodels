@@ -24,6 +24,7 @@ Skill
 
 
 -- Demo stuff from scaffold
+-- Safe to delete
 User
     ident Text
     password Text Maybe

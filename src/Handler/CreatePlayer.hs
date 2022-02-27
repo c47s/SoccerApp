@@ -25,3 +25,4 @@ createPlayerForm = renderBootstrap3 BootstrapBasicForm $ Player
                 Left ("Grade must be between 9 and 12, inclusive." :: Text)
             | otherwise = Right g
 
+-- TODO: Create Handlers to display and accept submissions of the form
