@@ -13,8 +13,7 @@
 module Field where
 
 import ClassyPrelude.Yesod
-import Database.Persist.Quasi
 
 data TeamGender = Male | Female
-    deriving (Show, Read, Eq)
+    deriving (Show, Read, Eq, Enum, Bounded)
 derivePersistField "TeamGender"

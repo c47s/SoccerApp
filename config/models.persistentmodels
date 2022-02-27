@@ -4,11 +4,11 @@
 Player
     first Text
     last Text
-    birthdate UTCTime
+    birthdate Day
     grade Int
     teamGender TeamGender
     tryoutNumber Int
-    tryoutNumExpiration UTCTime
+    tryoutNumExpiration Day
 Evaluator -- TODO: Implement auth
     first Text
     last Text
@@ -18,7 +18,7 @@ Evaluation
     skill SkillId
     score Int
     comments Text Maybe
-    date UTCTime
+    date Day
 Skill
     name Text
 

@@ -1,0 +1,9 @@
+<table>
+    $forall heading <- headings
+        <th style="padding:1vw">
+            #{heading}
+    $forall row <- rows
+        <tr>
+            $forall column <- row
+                <td style="padding:1vw">
+                    #{column}
